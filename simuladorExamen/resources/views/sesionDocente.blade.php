@@ -2,10 +2,10 @@
 
 
 @section('barra')
-<nav class="flex py-5 bg-green-500 text-white">
+<nav class="flex py-5 bg-red-500 text-white">
     <div class="w-1/2 px-12 mr-auto">
       <p class="text-2xl font-bold ">
-Bienvenido Docente  {{auth()->user()->name}}    </p>
+Bienvenido Docente:  {{auth()->user()->name}}    </p>
     </div>
 
     <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
@@ -22,14 +22,14 @@ Bienvenido Docente  {{auth()->user()->name}}    </p>
 
 @section('bienvenida')
 <h1 class="text-5xl text-center pt-10">
-  Bienvenido Maestro <br><b>{{auth()->user()->name}}</b>
+   Maestro <br><b>{{auth()->user()->name}}</b>
 </h1>
 @endsection
 
 @section('boton')
 
 <li class="mx-2">
-  <a href="{{route('examenNuevo.seccionExamen')}}" class="font-semibold py-3 px-4 rounded-md bg-green-400 text-white hover:bg-blue-700  ">
+  <a href="{{route('examenNuevo.seccionExamen')}}" class="font-semibold py-3 px-4 rounded-md bg-red-400 text-white hover:bg-blue-700  ">
     Agregar Exámen      
   </a>
 </li>

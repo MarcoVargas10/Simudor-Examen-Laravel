@@ -56,7 +56,7 @@ Editar Examen     </h1>
         
         
 
-        <button type="submit" class="rounded-md bg-green-500 w-full text-lg text-white font-semibold 
+        <button type="submit" class="rounded-md bg-red-500 w-full text-lg text-white font-semibold 
         p-2 my-3 hover:bg-indigo-800">
 Actualizar Examen        </button>
 

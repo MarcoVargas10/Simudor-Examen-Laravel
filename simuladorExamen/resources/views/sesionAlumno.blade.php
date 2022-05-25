@@ -2,10 +2,10 @@
 
 
 @section('barra')
-<nav class="flex py-5 bg-green-500 text-white">
+<nav class="flex py-5 bg-red-500 text-white">
     <div class="w-1/2 px-12 mr-auto">
       <p class="text-2xl font-bold ">
-Bienvenido Alumno   {{auth()->user()->name}}   </p>
+Bienvenido Alumno:   {{auth()->user()->name}}   </p>
     </div>
 
     <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
@@ -13,7 +13,7 @@ Bienvenido Alumno   {{auth()->user()->name}}   </p>
       <li class="mx-2">
         <a href="{{route('respuesta.verRespuesta')}}" class="font-semibold hover:bg-white
         hover:text-indigo-700 py-3 px-4 rounded-md">
-          Ver Calificaciones
+          Ver tus Calificaciones
         </a>
       </li> 
 
@@ -29,7 +29,7 @@ Bienvenido Alumno   {{auth()->user()->name}}   </p>
 
 @section('bienvenida')
 <h1 class="text-5xl text-center pt-10">
-  Bienvenido Alumno <br><b>{{auth()->user()->name}}</b>
+Alumno <br><b>{{auth()->user()->name}}</b>
 </h1>
 @endsection
 
@@ -68,7 +68,7 @@ Bienvenido Alumno   {{auth()->user()->name}}   </p>
 
           <td class="p-3 flex justify-center" >
 
-            <a href="{{route('respuesta.seccionResponder',$row->id)}}" class="bg-green-500 text-white px-4 py-1 rounded-2xl">
+            <a href="{{route('respuesta.seccionResponder',$row->id)}}" class="bg-red-500 text-white px-4 py-1 rounded-2xl">
             <i class="fa fa-check-square fa-align-center pr-2"></i>Responder</a>
           </td>
         </tr>

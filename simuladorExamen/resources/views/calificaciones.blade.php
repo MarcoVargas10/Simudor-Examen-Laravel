@@ -1,10 +1,10 @@
 @extends('plantilla.base')
 
 @section('barra')
-<nav class="flex py-5 bg-green-500 text-white">
+<nav class="flex py-5 bg-red-500 text-white">
     <div class="w-1/2 px-12 mr-auto">
       <p class="text-2xl font-bold ">
-Sección de Calificaciones   </p>
+Calificaciones   </p>
     </div>
 
     <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
@@ -12,7 +12,7 @@ Sección de Calificaciones   </p>
       <li class="mx-2">
         <a href="{{route('alumno.index')}}" class="font-semibold hover:bg-white
         hover:text-indigo-700 py-3 px-4 rounded-md">
-Home        </a>
+Inicio        </a>
       </li> 
 
       <li>
@@ -27,7 +27,7 @@ Home        </a>
 
 @section('bienvenida')
 <h1 class="text-5xl text-center pt-10">
-  A continuación se muestras tus calificaciones obtenidas</b>
+  Calificaciones obtenidas</b>
 </h1>
 @endsection
 

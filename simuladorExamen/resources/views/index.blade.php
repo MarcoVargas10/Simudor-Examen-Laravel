@@ -3,10 +3,10 @@
  
 
 @section('barra')
-<nav class="flex py-5 bg-green-500 text-white">
+<nav class="flex py-5 bg-red-500 text-white">
     <div class="w-1/2 px-12 mr-auto">
       <p class="text-2xl font-bold ">
-        Simulador Examen
+        Simulador de Examen Laravel
       </p>
     </div>
 
@@ -15,13 +15,13 @@
       <li class="mx-2">
         <a href="{{route('iniciarSesion.home')}}" class="font-semibold hover:bg-white
         hover:text-indigo-700 py-3 px-4 rounded-md">
-          Login
+          Ir a Inicio
         </a>
       </li>
       <li>
         <a href="{{route('iniciarSesion.registro')}}" class="font-semibold 
          py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700">
-         Registro
+         Registrar usuario
         </a>
       </li>  
     </ul>
@@ -30,10 +30,10 @@
 
 @section('content')
 <main class="p-1 flex justify-center">
-    <h1 class="hover: text-blue-500 font-semibold text-6xl">Bienvenido al Simulador</h1>
+    <h1 class="hover: text-blue-500 font-semibold text-6xl">Bienvenido al Simulador de Examenes</h1>
 </main>
 
 <div class="container mx-auto pt-10">
-<img class="mx-auto " src="https://cdn-icons-png.flaticon.com/512/393/393573.png" width="30%" >
+<img class="mx-auto " src="https://www.conamat.com/hubfs/Sin-ti%CC%81tulo-5.png" width="30%" >
   </div>
 @endsection

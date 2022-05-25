@@ -4,12 +4,10 @@
 
 <div class="block mx-auto my-1 p-8 bg-white w-1/3 border border-gray-200 rounded-lg shadow-lg">
     <h1 class="text-3xl font-bold text-blue-400 text-center pt-2">
-Respondamos el Examen</h1>
+Examen</h1>
 
-<h1 class="text-3xl font-bold text-red-400 text-center pt-2">&#128515; {{$examen->materia}} &#128515;</h1>
-<h2 class="text-2xl font-bold text-green-400 text-center pt-2">
-    ¡Mucha suerte!
-</h2>
+<h1 class="text-3xl font-bold text-red-400 text-center pt-2"> {{$examen->materia}}</h1>
+
 
     <form class="mt-4"  method="POST" action="{{route('registrarRespuestas',$examen->id)}}">
         @csrf
@@ -35,7 +33,7 @@ Respondamos el Examen</h1>
         <input type="text" class="border border-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-600
         p-2 my-2 focus:bg-white" placeholder="Respuesta 5" id="respuesta5" name="respuesta5">
         
-        <button type="submit" class="rounded-md bg-green-500 w-full text-lg text-white font-semibold 
+        <button type="submit" class="rounded-md bg-red-500 w-full text-lg text-white font-semibold 
         p-2 my-3 hover:bg-indigo-800">
 Contestar Exámen        </button>
 

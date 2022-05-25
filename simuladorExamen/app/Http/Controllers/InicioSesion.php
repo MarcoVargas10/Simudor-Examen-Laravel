@@ -25,7 +25,7 @@ class InicioSesion extends Controller
     {
         if (auth()->attempt(request(['user', 'password'])) == false) {
             return back()->withErrors([
-                'message' => 'El usuario o la contraseña son incorrectos. Intenta de nuevo'
+                'message' => 'El usuario o la contraseña son incorrectos'
             ]);
         } else {
             if (auth()->user()->typeUser == 'Docente' || auth()->user()->typeUser == 'docente') {
@@ -75,8 +75,6 @@ class InicioSesion extends Controller
 
 
         $examen = Examen::all();
-
-
 
         return view('sesionAlumno', compact('examen'));
     }
