@@ -47,10 +47,10 @@ Inicio        </a>
           <th class="w-1/16 py-4 ...">Respuesta 4</th>
           <th class="w-1/16 py-4 ...">Respuesta 5</th>
           <th class="w-1/16 py-4 ...">Contestado</th>
+          <th class="w-1/16 py-4 ...">Calificacion</th>
         </tr>
       </thead>
       <tbody>
-
 
         @foreach ($examen as $row)
             @foreach ($calificaciones as $rowCal)
@@ -59,36 +59,39 @@ Inicio        </a>
                         <td class="p-3 text-center">{{$row->materia}}</td>
 
                         @if($rowCal->respuesta1==$row->respuesta1)
-                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta1}} / {{$row->respuesta1}}</td>
+                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta1}} / {{$row->respuesta1}} Correcta</td>
+                          
                         @else
                         <td class="p-3 text-center text-red-400">{{$rowCal->respuesta1}} / {{$row->respuesta1}}</td>
                         @endif
 
                         @if($rowCal->respuesta2==$row->respuesta2)
-                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta2}} / {{$row->respuesta2}}</td>
+                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta2}} / {{$row->respuesta2}} Correcta</td>
                         @else
                         <td class="p-3 text-center text-red-400">{{$rowCal->respuesta2}} / {{$row->respuesta2}}</td>
                         @endif
 
                         @if($rowCal->respuesta3==$row->respuesta3)
-                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta3}} / {{$row->respuesta3}}</td>
+                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta3}} / {{$row->respuesta3}} Correcta</td>
                         @else
                         <td class="p-3 text-center text-red-400">{{$rowCal->respuesta3}} / {{$row->respuesta3}}</td>
                         @endif
 
                         @if($rowCal->respuesta4==$row->respuesta4)
-                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta4}} / {{$row->respuesta4}}</td>
+                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta4}} / {{$row->respuesta4}} Correcta</td>
                         @else
                         <td class="p-3 text-center text-red-400">{{$rowCal->respuesta4}} / {{$row->respuesta4}}</td>
                         @endif
 
                         @if($rowCal->respuesta5==$row->respuesta5)
-                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta5}} / {{$row->respuesta5}}</td>
+                        <td class="p-3 text-center text-green-400">{{$rowCal->respuesta5}} / {{$row->respuesta5}} Correcta</td>
                         @else
                         <td class="p-3 text-center text-red-400">{{$rowCal->respuesta5}} / {{$row->respuesta5}}</td>
                         @endif
-                        
+
                         <td class="p-3 text-center">{{$rowCal->created_at}}</td>
+                        <td class="p-3 text-center"></td>
+                        
                     </tr>
                 @endif
          @endforeach

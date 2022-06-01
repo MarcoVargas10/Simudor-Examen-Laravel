@@ -12,12 +12,7 @@
 
     <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
 
-      <li class="mx-2">
-        <a href="{{route('iniciarSesion.home')}}" class="font-semibold hover:bg-white
-        hover:text-indigo-700 py-3 px-4 rounded-md">
-          Ir a Inicio
-        </a>
-      </li>
+      
       <li>
         <a href="{{route('iniciarSesion.registro')}}" class="font-semibold 
          py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700">
@@ -36,4 +31,15 @@
 <div class="container mx-auto pt-10">
 <img class="mx-auto " src="https://www.conamat.com/hubfs/Sin-ti%CC%81tulo-5.png" width="30%" >
   </div>
+
+
+  <main class="p-1 flex justify-center">
+        <a class="bg-sky-600 hover:bg-sky-700 ..." href="{{route('iniciarSesion.home')}}" class="font-semibold hover:bg-white
+          hover:text-indigo-700 py-3 px-4 rounded-md">
+          Ir a Inicio
+        </a>
+  </main>
+
+        
+      
 @endsection
